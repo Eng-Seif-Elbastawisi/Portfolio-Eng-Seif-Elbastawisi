@@ -77,6 +77,8 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: var(--nav-height);
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -86,6 +88,8 @@ body {
     line-height: 1.6;
     transition: background-color var(--transition-normal), color var(--transition-normal);
     overflow-x: hidden;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -403,6 +407,7 @@ img {
     margin-bottom: 0.5rem;
     background: linear-gradient(135deg, var(--text-primary), var(--primary));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 1.1;
 }
@@ -691,6 +696,7 @@ img {
     margin-bottom: 1.5rem;
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -1121,12 +1127,19 @@ img {
     }
     
     .hero-subtitle {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-intro {
+        font-size: 1rem;
+        margin-bottom: 2rem;
     }
 
     .hero-cta {
         flex-direction: column;
         width: 100%;
+        gap: 0.75rem;
     }
 
     .hero-cta .btn {

@@ -25,15 +25,22 @@
             box-sizing: border-box;
         }
 
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f4f7f6;
             color: var(--text-dark);
             line-height: 1.6;
-            padding: 2rem 1rem;
+            padding: 1.5rem 1rem;
+            -webkit-text-size-adjust: 100%;
         }
 
         .cv-container {
+            width: 100%;
             max-width: 900px;
             margin: 0 auto;
             background: var(--bg-color);
@@ -93,9 +100,11 @@
             font-size: 1rem;
         }
 
-        .contact-item a {
+        .contact-item a, .contact-item span {
             color: var(--text-dark);
             text-decoration: none;
+            word-break: break-word;
+            overflow-wrap: anywhere;
         }
 
         .contact-separator {
@@ -274,8 +283,9 @@
             }
             .cv-container {
                 box-shadow: none;
-                margin: 0;
+                margin: 0 auto;
                 width: 100%;
+                border-radius: 0;
             }
             .cv-header {
                 padding: 20px 10px;
@@ -303,26 +313,46 @@
                 grid-template-columns: 1fr;
             }
             .tech-skills-item {
-                flex-direction: column;
-                gap: 2px;
+                flex-wrap: wrap;
+                gap: 5px;
             }
         }
 
         @media (max-width: 480px) {
+            .cv-header {
+                padding: 25px 15px 15px;
+            }
             .cv-header h1 {
                 font-size: 1.5rem;
+                margin-bottom: 8px;
+            }
+            .cv-header h2 {
+                font-size: 0.95rem;
             }
             .contact-item {
                 font-size: 0.85rem;
+                text-align: center;
+                flex-direction: column;
+                gap: 2px;
+            }
+            .contact-item i {
+                margin-bottom: 2px;
             }
             .section-title {
                 font-size: 1.1rem;
+                margin-bottom: 10px;
+            }
+            .cv-body {
+                padding: 15px 10px;
             }
             .download-btn {
                 bottom: 20px;
                 right: 20px;
                 padding: 10px 18px;
                 font-size: 0.9rem;
+                width: calc(100% - 40px);
+                justify-content: center;
+                border-radius: 12px;
             }
         }
 
@@ -377,6 +407,11 @@
             <div class="contact-item">
                 <i class="fa-brands fa-linkedin"></i>
                 <a href="https://linkedin.com/in/seif-elbastawisi-89631A" target="_blank">LinkedIn: linkedin.com/in/seif-elbastawisi-[id]</a>
+            </div>
+            <span class="contact-separator">|</span>
+            <div class="contact-item">
+                 <i class="fa-solid fa-user-tie"></i>
+                <a href="https://seif9474.github.io/Portfolio-Seif_Elbastawisi/" target="_blank">Portfolio : https://seif9474.github.io/Portfolio-Seif_Elbastawisi/ </a>
             </div>
         </div>
     </div>
