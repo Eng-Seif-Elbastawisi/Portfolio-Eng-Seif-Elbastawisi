@@ -1,597 +1,712 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seif Elbastawisi - CV</title>
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <style>
-        :root {
-            --primary-blue: #234988;
-            --text-dark: #333333;
-            --text-light: #555555;
-            --bg-color: #ffffff;
-            --divider-color: #b5c3dbee;
-        }
+      :root {
+        --primary-blue: #234988;
+        --text-dark: #333333;
+        --text-light: #555555;
+        --bg-color: #ffffff;
+        --divider-color: #b5c3dbee;
+      }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        html, body {
-            overflow-x: hidden;
-            width: 100%;
-        }
+      html,
+      body {
+        overflow-x: auto;
+        width: 100%;
+      }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f4f7f6;
-            color: var(--text-dark);
-            line-height: 1.6;
-            padding: 1.5rem 1rem;
-            -webkit-text-size-adjust: 100%;
-        }
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f4f7f6;
+        color: var(--text-dark);
+        line-height: 1.6;
+        padding: 1.5rem 1rem;
+        -webkit-text-size-adjust: 100%;
+      }
 
-        .cv-container {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            background: var(--bg-color);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
+      .cv-container {
+        width: 100%;
+        max-width: 900px;
+        min-width: 800px;
+        margin: 0 auto;
+        background: var(--bg-color);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
 
-        /* Header Section */
-        .cv-header {
-            background: linear-gradient(90deg, #1e3a6a 0%, #2f5a9e 50%, #1e3a6a 100%);
-            color: #ffffff;
-            text-align: center;
-            padding: 20px 20px 15px;
-        }
+      /* Header Section */
+      .cv-header {
+        background: linear-gradient(
+          90deg,
+          #1e3a6a 0%,
+          #2f5a9e 50%,
+          #1e3a6a 100%
+        );
+        color: #ffffff;
+        text-align: center;
+        padding: 20px 20px 15px;
+      }
 
-        .cv-header h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            margin-bottom: 5px;
-            letter-spacing: 0.5px;
-        }
+      .cv-header h1 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+        letter-spacing: 0.5px;
+      }
 
-        .cv-header h2 {
-            font-size: 1.1rem;
-            font-weight: 400;
-            letter-spacing: 0.5px;
-        }
+      .cv-header h2 {
+        font-size: 1.1rem;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+      }
 
-        /* Contact Section */
-        .cv-contact {
-            text-align: center;
-            padding: 15px 20px;
-            border-bottom: 1px solid var(--divider-color);
-            font-size: 0.9rem;
-            color: var(--text-dark);
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            align-items: center;
-        }
+      /* Contact Section */
+      .cv-contact {
+        text-align: center;
+        padding: 15px 20px;
+        border-bottom: 1px solid var(--divider-color);
+        font-size: 0.9rem;
+        color: var(--text-dark);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+      }
 
-        .contact-row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
+      .contact-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
 
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
 
-        .contact-item i {
-            color: var(--primary-blue);
-            font-size: 1rem;
-        }
+      .contact-item i {
+        color: var(--primary-blue);
+        font-size: 1rem;
+      }
 
-        .contact-item a, .contact-item span {
-            color: var(--text-dark);
-            text-decoration: none;
-            word-break: break-word;
-            overflow-wrap: anywhere;
-        }
+      .contact-item a,
+      .contact-item span {
+        color: var(--text-dark);
+        text-decoration: none;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+      }
 
-        .contact-separator {
-            color: #ccc;
-        }
+      .contact-separator {
+        color: #ccc;
+      }
 
-        /* Main Content Layout */
-        .cv-body {
-            display: flex;
-            flex-direction: row;
-            padding: 20px 30px;
-            gap: 30px;
-        }
+      /* Main Content Layout */
+      .cv-body {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 30px;
+        gap: 20px;
+      }
 
-        .main-col {
-            flex: 2;
-        }
+      .main-col {
+        flex: 1;
+        width: 100%;
+      }
 
-        .side-col {
-            flex: 1;
-        }
+      .side-col {
+        flex: 1;
+        width: 100%;
+      }
 
-        /* Section Title Styling */
-        .section-title {
-            color: var(--primary-blue);
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 12px;
-            padding-bottom: 5px;
-            border-bottom: 2px solid var(--divider-color);
-            text-transform: capitalize;
-        }
+      /* Section Title Styling */
+      .section-title {
+        color: var(--primary-blue);
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 12px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid var(--divider-color);
+        text-transform: capitalize;
+      }
 
-        /* Lists Styling */
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-            margin-bottom: 5px;
-        }
+      /* Lists Styling */
+      ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin-bottom: 5px;
+      }
 
-        li {
-            margin-bottom: 5px;
-            font-size: 0.9rem;
-            color: var(--text-light);
-        }
+      li {
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+        color: var(--text-light);
+      }
 
-        .section-block {
-            margin-bottom: 25px;
-        }
+      .section-block {
+        margin-bottom: 25px;
+      }
 
-        .section-block p {
-            font-size: 0.9rem;
-            color: var(--text-light);
-        }
+      .section-block p {
+        font-size: 0.9rem;
+        color: var(--text-light);
+      }
 
-        /* Skills specific */
-        .tech-skills-item {
-            margin-bottom: 8px;
-            font-size: 0.9rem;
-            display: flex;
-            align-items: flex-start;
-            gap: 5px;
-        }
+      /* Skills specific */
+      .tech-skills-item {
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 5px;
+      }
 
-        .tech-skills-item strong {
-            color: var(--primary-blue);
-            font-weight: 600;
-            white-space: nowrap;
-        }
+      .tech-skills-item strong {
+        color: var(--primary-blue);
+        font-weight: 600;
+        white-space: nowrap;
+      }
 
-        .bullet-blue li::marker {
-            color: var(--primary-blue);
-        }
+      .bullet-blue li::marker {
+        color: var(--primary-blue);
+      }
 
-        /* Soft Skills specific */
-        .soft-skills-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 5px;
-        }
+      /* Soft Skills specific */
+      .soft-skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+      }
 
-        /* Experience specific */
-        .exp-title {
-            font-weight: 600;
-            color: var(--text-dark);
-            font-size: 0.95rem;
-            margin-bottom: 5px;
-        }
+      /* Experience specific */
+      .exp-title {
+        font-weight: 600;
+        color: var(--text-dark);
+        font-size: 0.95rem;
+        margin-bottom: 5px;
+      }
 
-        .exp-role {
-            font-weight: 600;
-        }
+      .exp-role {
+        font-weight: 600;
+      }
 
-        .highlight-text {
-            color: var(--primary-blue);
-            font-weight: 600;
-        }
+      .highlight-text {
+        color: var(--primary-blue);
+        font-weight: 600;
+      }
 
-        /* Projects specific */
-        .project-item {
-            margin-bottom: 15px;
-        }
-        
-        .project-title {
-            font-weight: 600;
-            color: var(--primary-blue);
-            font-size: 0.95rem;
-            margin-bottom: 3px;
-        }
+      /* Projects specific */
+      .project-item {
+        margin-bottom: 15px;
+      }
 
-        .project-desc {
-            font-size: 0.9rem;
-            color: var(--text-light);
-            margin-bottom: 4px;
-        }
+      .project-title {
+        font-weight: 600;
+        color: var(--primary-blue);
+        font-size: 0.95rem;
+        margin-bottom: 3px;
+      }
 
-        /* Education/Side specific */
-        .side-item {
-            margin-bottom: 12px;
-            font-size: 0.9rem;
-            color: var(--text-light);
-            display: flex;
-            align-items: flex-start;
-            gap: 8px;
-        }
-        
-        .side-item i {
-            color: var(--primary-blue);
-            margin-top: 3px;
-            min-width: 16px;
-        }
+      .project-desc {
+        font-size: 0.9rem;
+        color: var(--text-light);
+        margin-bottom: 4px;
+      }
 
-        .side-item-content {
-            display: flex;
-            flex-direction: column;
-        }
+      /* Education/Side specific */
+      .side-item {
+        margin-bottom: 12px;
+        font-size: 0.9rem;
+        color: var(--text-light);
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+      }
 
-        .side-item-bold {
-            font-weight: 600;
-            color: var(--primary-blue);
-        }
+      .side-item i {
+        color: var(--primary-blue);
+        margin-top: 3px;
+        min-width: 16px;
+      }
 
-        /* Floating Download Button */
+      .side-item-content {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .side-item-bold {
+        font-weight: 600;
+        color: var(--primary-blue);
+      }
+
+      /* Floating Download Button */
+      .download-btn {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: var(--primary-blue);
+        color: white;
+        padding: 12px 24px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        border: none;
+        transition: all 0.3s ease;
+        z-index: 1000;
+      }
+
+      .download-btn:hover {
+        background-color: #1e3a6a;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      @media print {
         .download-btn {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: var(--primary-blue);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-family: 'Inter', sans-serif;
-            font-size: 1rem;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            cursor: pointer;
-            border: none;
-            transition: all 0.3s ease;
-            z-index: 1000;
+          display: none;
         }
-
-        .download-btn:hover {
-            background-color: #1e3a6a;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        body {
+          padding: 0;
+          background-color: white;
         }
-        
-        /* Mobile Responsive Improvements */
-        @media (max-width: 768px) {
-            body {
-                padding: 1rem 0.5rem;
-            }
-            .cv-container {
-                box-shadow: none;
-                margin: 0 auto;
-                width: 100%;
-                border-radius: 0;
-            }
-            .cv-header {
-                padding: 20px 10px;
-            }
-            .cv-header h1 {
-                font-size: 1.8rem;
-            }
-            .cv-header h2 {
-                font-size: 1rem;
-            }
-            .cv-body {
-                flex-direction: column;
-                padding: 20px 15px;
-                gap: 20px;
-            }
-            .contact-row {
-                flex-direction: column;
-                align-items: center;
-                gap: 5px;
-            }
-            .contact-separator {
-                display: none;
-            }
-            .soft-skills-grid {
-                grid-template-columns: 1fr;
-            }
-            .tech-skills-item {
-                flex-wrap: wrap;
-                gap: 5px;
-            }
+        .cv-container {
+          box-shadow: none;
+          max-width: 100%;
         }
-
-        @media (max-width: 480px) {
-            .cv-header {
-                padding: 25px 15px 15px;
-            }
-            .cv-header h1 {
-                font-size: 1.5rem;
-                margin-bottom: 8px;
-            }
-            .cv-header h2 {
-                font-size: 0.95rem;
-            }
-            .contact-item {
-                font-size: 0.85rem;
-                text-align: center;
-                flex-direction: column;
-                gap: 2px;
-            }
-            .contact-item i {
-                margin-bottom: 2px;
-            }
-            .section-title {
-                font-size: 1.1rem;
-                margin-bottom: 10px;
-            }
-            .cv-body {
-                padding: 15px 10px;
-            }
-            .download-btn {
-                bottom: 20px;
-                right: 20px;
-                padding: 10px 18px;
-                font-size: 0.9rem;
-                width: calc(100% - 40px);
-                justify-content: center;
-                border-radius: 12px;
-            }
-        }
-
-        @media print {
-            .download-btn {
-                display: none;
-            }
-            body {
-                padding: 0;
-                background-color: white;
-            }
-            .cv-container {
-                box-shadow: none;
-                max-width: 100%;
-            }
-        }
+      }
     </style>
-</head>
-<body>
-
-<div class="cv-container">
-    <!-- Header -->
-    <header class="cv-header">
+  </head>
+  <body>
+    <div class="cv-container">
+      <!-- Header -->
+      <header class="cv-header">
         <h1>Seif Elbastawisi</h1>
-        <h2>Frontend Developer | React Specialist</h2>
-    </header>
+        <h2>Frontend Developer | React && Vue</h2>
+      </header>
 
-    <!-- Contact Info -->
-    <div class="cv-contact">
+      <!-- Contact Info -->
+      <div class="cv-contact">
         <div class="contact-row">
-            <div class="contact-item">
-                <i class="fa-solid fa-location-dot"></i>
-                <span>Mansoura, Egypt</span>
-            </div>
-            <span class="contact-separator">|</span>
-            <div class="contact-item">
-                <i class="fa-solid fa-phone"></i>
-                <span>01223737256</span>
-            </div>
-            <span class="contact-separator">|</span>
-            <div class="contact-item">
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:seifelbastawisi@gmail.com">seifelbastawisi@gmail.com</a>
-            </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Mansoura, Egypt</span>
+          </div>
+          <span class="contact-separator">|</span>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+201223773256">(+20) 1223773256</a>
+          </div>
+          <span class="contact-separator">|</span>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:seifelbastawisi@gmail.com"
+              >seifelbastawisi@gmail.com</a
+            >
+          </div>
         </div>
-        <div class="contact-row">
-            <div class="contact-item">
-                <i class="fa-brands fa-github"></i>
-                <a href="https://github.com/Seif9474" target="_blank">GitHub: github.com/Seif9474</a>
-            </div>
-            <span class="contact-separator">|</span>
-            <div class="contact-item">
-                <i class="fa-brands fa-linkedin"></i>
-                <a href="https://linkedin.com/in/seif-elbastawisi-89631A" target="_blank">LinkedIn: linkedin.com/in/seif-elbastawisi-[id]</a>
-            </div>
-            <span class="contact-separator">|</span>
-            <div class="contact-item">
-                 <i class="fa-solid fa-user-tie"></i>
-                <a href="https://seif9474.github.io/Portfolio-Seif_Elbastawisi/" target="_blank">Portfolio : https://seif9474.github.io/Portfolio-Seif_Elbastawisi/ </a>
-            </div>
+        <div class="contact-row mt-2">
+          <div class="contact-item">
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/Eng-Seif-Elbastawisi" target="_blank"
+              >https://github.com/Eng-Seif-Elbastawisi</a
+            >
+          </div>
+          <span class="contact-separator">|</span>
+          <div class="contact-item">
+            <i class="fa-brands fa-linkedin"></i>
+            <a
+              href="https://www.linkedin.com/in/seif-elbastawisi-8953b13a4"
+              target="_blank"
+              >https://www.linkedin.com/in/seif-elbastawisi-8953b13a4</a
+            >
+          </div>
+          <span class="contact-separator">|</span>
+          <div class="contact-item">
+            <i class="fa-solid fa-globe"></i>
+            <a
+              href="https://seif9474.github.io/Portfolio-Seif_Elbastawisi/"
+              target="_blank"
+              >seif9474.github.io (Portfolio)</a
+            >
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- Main Content -->
-    <div class="cv-body">
-        
+      <!-- Main Content -->
+      <div class="cv-body">
         <!-- Left Column -->
         <div class="main-col">
-            
-            <!-- Professional Objective -->
-            <div class="section-block">
-                <h3 class="section-title">Professional Objective</h3>
-                <p>Frontend Developer specializing in React, focused on responsive, high-performance web applications with clean and modern interfaces. Seeking opportunities to contribute to professional development teams and deliver scalable web solutions.</p>
+          <!-- Professional Summary & Objective -->
+          <div class="section-block">
+            <h3 class="section-title">Professional Summary</h3>
+            <p>
+              Detail-oriented Frontend Developer with proven expertise in
+              architecting scalable, responsive web applications using modern
+              JavaScript frameworks including <strong>React.js</strong> and
+              <strong>Vue.js</strong> (Next.js, Nuxt.js). Adept at translating
+              complex UI/UX designs into pixel-perfect, high-performance code,
+              managing complex application state (Redux, Pinia), and seamlessly
+              integrating dynamic RESTful APIs. Dedicated to writing clean,
+              maintainable code within Agile environments, with a strong focus
+              on web performance, cross-browser compatibility, and delivering
+              impactful digital experiences that drive user engagement and
+              business success.
+            </p>
+          </div>
+
+          <!-- Technical Skills -->
+          <div class="section-block">
+            <h3 class="section-title">Technical Skills</h3>
+            <ul
+              class="bullet-blue"
+              style="list-style-type: none; padding-left: 0"
+            >
+              <li class="tech-skills-item">
+                <span style="color: var(--primary-blue)">•</span>
+                <strong>Languages:</strong>
+                <span>HTML5, CSS3, JavaScript (ES6+), TypeScript</span>
+              </li>
+              <li class="tech-skills-item">
+                <span style="color: var(--primary-blue)">•</span>
+                <strong>React Ecosystem:</strong>
+                <span>React.js, Next.js, Redux</span>
+              </li>
+              <li class="tech-skills-item">
+                <span style="color: var(--primary-blue)">•</span>
+                <strong>Vue Ecosystem:</strong>
+                <span>Vue.js, Nuxt.js, Pinia</span>
+              </li>
+              <li class="tech-skills-item">
+                <span style="color: var(--primary-blue)">•</span>
+                <strong>Styling & UI:</strong>
+                <span>Tailwind CSS, Bootstrap, Sass, Material UI</span>
+              </li>
+              <li class="tech-skills-item">
+                <span style="color: var(--primary-blue)">•</span>
+                <strong>Tools & Platforms:</strong>
+                <span>Git, GitHub, npm, VS Code, Figma</span>
+              </li>
+              <li class="tech-skills-item">
+                <span style="color: var(--primary-blue)">•</span>
+                <strong>Web Development:</strong>
+                <span
+                  >REST API Integration, Responsive Design, Web Performance,
+                  SEO</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="section-block">
+            <h3 class="section-title">Soft Skills</h3>
+            <div class="soft-skills-grid">
+              <ul class="bullet-blue">
+                <li>Teamwork & Collaboration</li>
+                <li>Communication</li>
+                <li>Attention to Detail</li>
+              </ul>
+              <ul class="bullet-blue">
+                <li>Problem Solving</li>
+                <li>Attention to Detail</li>
+                <li>Time Management</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Professional Experience -->
+          <div class="section-block">
+            <h3 class="section-title">Professional Experience</h3>
+
+            <div class="exp-title">
+              <span class="exp-role">Frontend Developer | Vue.js</span> –
+              TechLab Company
+              <div
+                style="
+                  font-size: 0.85rem;
+                  color: var(--text-light);
+                  font-weight: normal;
+                "
+              >
+                Mar 2026 – Present
+              </div>
+            </div>
+            <ul class="bullet-blue" style="margin-bottom: 15px">
+              <li>
+                <strong>Engineered</strong> responsive and scalable web
+                interfaces using
+                <span class="highlight-text">Vue.js, Nuxt.js, TypeScript</span>,
+                and Tailwind CSS.
+              </li>
+              <li>
+                <strong>Integrated</strong>
+                <span class="highlight-text">RESTful APIs</span> to deliver
+                dynamic data, implementing robust error handling, loading
+                screens, and validation states.
+              </li>
+              <li>
+                <strong>Architected</strong> centralized state management across
+                complex application features utilizing
+                <span class="highlight-text">Pinia</span>.
+              </li>
+              <li>
+                <strong>Collaborated</strong> within Agile environments to
+                implement real-world business requirements into maintainable
+                frontend code.
+              </li>
+            </ul>
+
+            <div class="exp-title">
+              <span class="exp-role">Frontend Developer | React.js</span> –
+              Upwork (Freelance)
+              <div
+                style="
+                  font-size: 0.85rem;
+                  color: var(--text-light);
+                  font-weight: normal;
+                "
+              >
+                Jan 2024 – Present
+              </div>
+            </div>
+            <ul class="bullet-blue" style="margin-bottom: 15px">
+              <li>
+                <strong>Designed and built</strong> modern, high-performance web
+                applications for global clients leveraging
+                <span class="highlight-text"
+                  >React.js, JavaScript, Tailwind CSS</span
+                >, and Bootstrap.
+              </li>
+              <li>
+                <strong>Optimized</strong> web performance and cross-browser
+                compatibility to ensure high-quality UI/UX.
+              </li>
+              <li>
+                <strong>Communicated</strong> effectively with remote
+                stakeholders to translate complex requirements into intuitive
+                frontend solutions.
+              </li>
+            </ul>
+
+            <div class="exp-title">
+              <span class="exp-role">Frontend Developer</span> – Quttel Company
+              <div
+                style="
+                  font-size: 0.85rem;
+                  color: var(--text-light);
+                  font-weight: normal;
+                "
+              >
+                Jan 2023 – Jan 2024
+              </div>
+            </div>
+            <ul class="bullet-blue">
+              <li>
+                <strong>Developed</strong> interactive and responsive web user
+                interfaces employing
+                <span class="highlight-text"
+                  >HTML5, CSS3, JavaScript (ES6+), and React</span
+                >.
+              </li>
+              <li>
+                <strong>Maintained</strong> strict version control using
+                <span class="highlight-text">Git and GitHub</span> within
+                team-based development workflows.
+              </li>
+              <li>
+                <strong>Contributed</strong> to building clean, user-friendly
+                applications tailored strictly to documented functional
+                specifications.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Projects -->
+          <div class="section-block">
+            <h3 class="section-title">Notable Projects</h3>
+
+            <div class="project-item">
+              <div class="project-title">
+                <span
+                  style="
+                    color: var(--primary-blue);
+                    font-size: 1.2rem;
+                    margin-right: 5px;
+                  "
+                  >•</span
+                >
+                Smart Academy (University Platform)
+              </div>
+              <ul class="bullet-blue">
+                <li>
+                  <strong>Engineered</strong> a comprehensive university
+                  platform allowing students to take online exams and view
+                  results.
+                </li>
+                <li>
+                  <strong>Technologies:</strong>
+                  <em>React.js, Tailwind CSS, JavaScript, REST API</em>
+                </li>
+              </ul>
             </div>
 
-            <!-- Technical Skills -->
-            <div class="section-block">
-                <h3 class="section-title">Technical Skills</h3>
-                <ul class="bullet-blue" style="list-style-type: none; padding-left: 0;">
-                    <li class="tech-skills-item"><span style="color:var(--primary-blue);">•</span> <strong>Languages:</strong> <span>HTML, CSS, JavaScript, TypeScript</span></li>
-                    <li class="tech-skills-item"><span style="color:var(--primary-blue);">•</span> <strong>Frameworks & Libraries:</strong> <span>React, Redux, Next.js</span></li>
-                    <li class="tech-skills-item"><span style="color:var(--primary-blue);">•</span> <strong>Styling & UI:</strong> <span>Tailwind CSS, Bootstrap, Sass, Material UI</span></li>
-                    <li class="tech-skills-item"><span style="color:var(--primary-blue);">•</span> <strong>Tools & Platforms:</strong> <span>Git, GitHub, npm, VS Code, Figma</span></li>
-                    <li class="tech-skills-item"><span style="color:var(--primary-blue);">•</span> <strong>Web Development:</strong> <span>REST API Integration, Responsive Design, Performance, SEO</span></li>
-                </ul>
+            <div class="project-item">
+              <div class="project-title">
+                <span
+                  style="
+                    color: var(--primary-blue);
+                    font-size: 1.2rem;
+                    margin-right: 5px;
+                  "
+                  >•</span
+                >
+                E-Commerce & Restaurant Websites
+              </div>
+              <ul class="bullet-blue">
+                <li>
+                  <strong>Developed</strong> modern, responsive platforms with
+                  dynamic product filtering and cart simulations.
+                </li>
+                <li>
+                  <strong>Technologies:</strong>
+                  <em
+                    >React.js, Redux, HTML5/CSS3, JavaScript (ES6+),
+                    Bootstrap</em
+                  >
+                </li>
+              </ul>
             </div>
-
-            <!-- Soft Skills -->
-            <div class="section-block">
-                <h3 class="section-title">Soft Skills</h3>
-                <div class="soft-skills-grid">
-                    <ul class="bullet-blue">
-                        <li>Teamwork & Collaboration</li>
-                        <li>Communication</li>
-                        <li>Attention to Detail</li>
-                    </ul>
-                    <ul class="bullet-blue">
-                        <li>Problem Solving</li>
-                        <li>Attention to Detail</li>
-                        <li>Time Management</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Professional Experience -->
-            <div class="section-block">
-                <h3 class="section-title">Professional Experience</h3>
-                <div class="exp-title">
-                    <span class="exp-role">Frontend Developer</span> (Internship - 3 Months)
-                </div>
-                <ul class="bullet-blue">
-                    <li>Developed the frontend for an <span class="highlight-text">online courses platform</span>.</li>
-                    <li>Built reusable <span class="highlight-text">React</span> components and responsive UI.</li>
-                    <li>Integrated <span class="highlight-text">REST APIS</span> for dynamic content.</li>
-                    <li>Optimized performance and enhanced user experience.</li>
-                    <li>Collaborated with team members following best practices.</li>
-                </ul>
-            </div>
-
-            <!-- Projects -->
-            <div class="section-block">
-                <h3 class="section-title">Projects</h3>
-                
-                <div class="project-item">
-                    <div class="project-title"><span style="color:var(--primary-blue); font-size:1.2rem; margin-right:5px;">•</span> E-Commerce Website</div>
-                    <ul class="bullet-blue">
-                        <li>Modern e-commerce platform for browsing products, filtering categories and simulating shopping.</li>
-                        <li><strong>Technologies:</strong> <em>React, Redux, JavaScript, Tailwind CSS, REST API</em></li>
-                    </ul>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-title"><span style="color:var(--primary-blue); font-size:1.2rem; margin-right:5px;">•</span> Restaurant Website</div>
-                    <ul class="bullet-blue">
-                        <li>Dynamic restaurant website showcasing menu, reservation simulation, and responsive UI.</li>
-                        <li><strong>Technologies:</strong> <em>HTML, CSS, JavaScript, Bootstrap</em></li>
-                    </ul>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-title"><span style="color:var(--primary-blue); font-size:1.2rem; margin-right:5px;">•</span> Fashion & Clothing Website</div>
-                    <ul class="bullet-blue">
-                        <li>Stylish fashion platform showcasing clothing collections with interactive UI.</li>
-                        <li><strong>Technologies:</strong> <em>React, JavaScript, CSS, Tailwind</em></li>
-                    </ul>
-                </div>
-            </div>
-
+          </div>
         </div>
 
         <!-- Right Column -->
         <div class="side-col">
-            
-            <!-- Education -->
-            <div class="section-block">
-                <h3 class="section-title">Education</h3>
-                <div class="side-item">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <div class="side-item-content">
-                        <span class="side-item-bold">Bachelor of Computer Science –</span>
-                        <span class="side-item-bold" style="font-weight: 500;">Mansoura University</span>
-                    </div>
-                </div>
-                <div class="side-item">
-                    <i class="fa-solid fa-calendar-check"></i>
-                    <div class="side-item-content">
-                        <span>Graduation Year: 2024</span>
-                    </div>
-                </div>
-                <div class="side-item">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <div class="side-item-content">
-                        <span>Grade: Good</span>
-                    </div>
-                </div>
+          <!-- Education -->
+          <div class="section-block">
+            <h3 class="section-title">Education</h3>
+            <div class="side-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div class="side-item-content">
+                <span class="side-item-bold"
+                  >Bachelor of Computer Science –</span
+                >
+                <span class="side-item-bold" style="font-weight: 500"
+                  >Mansoura University</span
+                >
+              </div>
             </div>
-
-            <!-- Languages -->
-            <div class="section-block">
-                <h3 class="section-title">Languages</h3>
-                <ul class="bullet-blue">
-                    <li>Arabic: Native</li>
-                    <li>English: Good</li>
-                </ul>
+            <div class="side-item">
+              <i class="fa-solid fa-calendar-check"></i>
+              <div class="side-item-content">
+                <span>Graduation Year: 2024</span>
+              </div>
             </div>
-
-            <!-- Military Status -->
-            <div class="section-block">
-                <h3 class="section-title">Military Status</h3>
-                <ul class="bullet-blue">
-                    <li>Completed Military Service</li>
-                </ul>
+            <div class="side-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <div class="side-item-content">
+                <span>Grade: Good</span>
+              </div>
             </div>
+          </div>
 
-            <!-- Additional Information -->
-            <div class="section-block">
-                <h3 class="section-title">Additional Information</h3>
-                <ul class="bullet-blue">
-                    <li>Strong understanding of <em>web development best practices</em></li>
-                    <li><em>Actively learning new frontend technologies</em></li>
-                    <li><em>Passionate about creating intuitive and responsive user interfaces</em></li>
-                    <li><em>Ready for Remote and On-Site positions</em></li>
-                </ul>
-            </div>
+          <!-- Languages -->
+          <div class="section-block">
+            <h3 class="section-title">Languages</h3>
+            <ul class="bullet-blue">
+              <li>Arabic: Native</li>
+              <li>English: Good</li>
+            </ul>
+          </div>
 
+          <!-- Military Status -->
+          <div class="section-block">
+            <h3 class="section-title">Military Status</h3>
+            <ul class="bullet-blue">
+              <li>Completed Military Service</li>
+            </ul>
+          </div>
+
+          <!-- Additional Information -->
+          <div class="section-block">
+            <h3 class="section-title">Additional Information</h3>
+            <ul class="bullet-blue">
+              <li>
+                Strong understanding of <em>web development best practices</em>
+              </li>
+              <li><em>Actively learning new frontend technologies</em></li>
+              <li>
+                <em
+                  >Passionate about creating intuitive and responsive user
+                  interfaces</em
+                >
+              </li>
+              <li><em>Ready for Remote and On-Site positions</em></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!-- Floating Download Button -->
-<button class="download-btn" onclick="downloadPDF()">
-    <i class="fa-solid fa-download"></i> Download PDF
-</button>
+    <!-- Floating Download Button -->
+    <button class="download-btn" onclick="downloadPDF()">
+      <i class="fa-solid fa-download"></i> Download PDF
+    </button>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-<script>
-    function downloadPDF() {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+      function downloadPDF() {
         // Use full body for capturing to avoid clipping
-        const element = document.querySelector('.cv-container');
+        const element = document.querySelector(".cv-container");
         const opt = {
-            margin:       [10, 5, 10, 5],
-            filename:     'Seif_Elbastawisi_CV.pdf',
-            image:        { type: 'jpeg', quality: 0.98 },
-            html2canvas:  { scale: 2, useCORS: true, letterRendering: true },
-            jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+          margin: [10, 5, 10, 5],
+          filename: "Seif_Elbastawisi_CV.pdf",
+          image: { type: "jpeg", quality: 0.98 },
+          html2canvas: { scale: 2, useCORS: true, letterRendering: true },
+          jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
         };
 
         // Trigger the download
         html2pdf().set(opt).from(element).save();
-    }
+      }
 
-    // Auto-trigger if URL has ?download=true
-    window.onload = () => {
+      // Auto-trigger if URL has ?download=true
+      window.onload = () => {
         const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get('download') === 'true') {
-            setTimeout(downloadPDF, 800); 
+        if (urlParams.get("download") === "true") {
+          setTimeout(downloadPDF, 800);
         }
-    };
-</script>
-
-</body>
+      };
+    </script>
+  </body>
 </html>

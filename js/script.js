@@ -202,6 +202,66 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(type, 1000);
     }
 
+    // 10.6 Swiper Initialization
+    let projectSwiper = null;
+    if (document.querySelector('.project-swiper')) {
+        projectSwiper = new Swiper('.project-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            observer: true,
+            observeParents: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+    }
+
+    // 10.5 Project Filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterBtns.forEach(b => b.classList.remove('active'));
+            // Add active class to clicked button
+            btn.classList.add('active');
+
+            const filterValue = btn.getAttribute('data-filter');
+
+            projectCards.forEach(card => {
+                if (filterValue === 'all') {
+                    card.classList.remove('hide');
+                } else {
+                    if (card.getAttribute('data-category') === filterValue) {
+                        card.classList.remove('hide');
+                    } else {
+                        card.classList.add('hide');
+                    }
+                }
+            });
+            
+            // Re-initialize or update swiper layout after filtering
+            if (projectSwiper) {
+                projectSwiper.update();
+                projectSwiper.slideTo(0);
+            }
+        });
+    });
+
     // 10. 3D Tilt Effect for Project Cards
     const tiltCards = document.querySelectorAll('.project-card');
     tiltCards.forEach(card => {

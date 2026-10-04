@@ -158,6 +158,14 @@ img {
 .text-center { text-align: center; }
 .relative { position: relative; }
 
+.text-gradient {
+    background: linear-gradient(135deg, var(--primary), #a855f7, var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
 /* ==========================================================================
    Buttons & Cards
    ========================================================================== */
@@ -471,6 +479,7 @@ img {
 .float-1 { top: 15%; left: 15%; animation: float 4s ease-in-out infinite; }
 .float-2 { bottom: 20%; right: 15%; animation: float 5s ease-in-out infinite reverse; font-size: 3.5rem; }
 .float-3 { top: 40%; right: 5%; animation: float 6s ease-in-out infinite; font-size: 2.5rem; }
+.float-4 { bottom: 10%; left: 20%; animation: float 4.5s ease-in-out infinite alternate; font-size: 2.8rem; }
 
 @keyframes morph {
     0% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
@@ -631,10 +640,76 @@ img {
 /* ==========================================================================
    Projects Section
    ========================================================================== */
+.project-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 2px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-family: var(--font-heading);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+.project-card.hide {
+    display: none;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
     gap: 2rem;
+}
+
+/* Swiper Styles */
+.project-swiper {
+    width: 100%;
+    padding-bottom: 4rem;
+    padding-top: 1rem;
+}
+
+.project-swiper .swiper-slide {
+    height: auto; /* ensure cards stretch to same height if needed */
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--primary) !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: var(--primary) !important;
+    background: var(--bg-surface);
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50%;
+    box-shadow: var(--shadow-md);
+    top: 45% !important;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 1.25rem !important;
+    font-weight: 800;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background: var(--primary);
+    color: white !important;
 }
 
 .project-card {
