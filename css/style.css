@@ -1144,7 +1144,6 @@ img {
 
     .hero-content {
         margin: 0 auto;
-        padding-top: 60px;
     }
 
     .hero-cta {
@@ -1186,7 +1185,7 @@ img {
     }
 
     .hero {
-        padding-top: calc(var(--nav-height) + 2rem);
+        padding-top: calc(var(--nav-height) + 3.5rem);
     }
 
     .objective-text {
