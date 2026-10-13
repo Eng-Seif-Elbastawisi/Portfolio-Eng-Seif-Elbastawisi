@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Seif Elbastawisi | Frontend Developer — React &amp; Vue</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Styles -->
+<link href="css/style.css" rel="stylesheet"/>
+<meta content="Portfolio of Seif Elbastawisi, Frontend Developer building responsive web interfaces with JavaScript, React, Vue, and modern CSS." name="description"/>
+<meta property="og:title" content="Seif Elbastawisi | Frontend Developer"/>
+<meta property="og:description" content="Explore selected frontend projects, technical skills, and experience."/>
+<meta property="og:type" content="website"/></head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+<div class="scroll-progress-container">
+<div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+</div>
+<div class="container nav-content">
+<!-- <a href="#" class="logo">Seif.<span>Dev</span></a> -->
+<a aria-label="Seif Elbastawisi, home" class="logo" href="#hero">Seif.<span>Elbastawisi</span></a>
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="cv.html">CV</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<div class="nav-actions">
+<button aria-label="Toggle Dark Mode" class="icon-btn" id="theme-toggle">
+<i class="fa-solid fa-moon"></i>
+</button>
+<div aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu" class="hamburger" id="hamburger" role="button" tabindex="0">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+<ul class="mobile-nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="cv.html">CV</a></li>
+<li><a href="cv.html?download=true">Download CV</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</nav>
+<main id="main-content" tabindex="-1">
+<!-- Hero Section -->
+<section class="hero section" id="hero">
+<div class="container hero-container">
+<div class="hero-content reveal">
+<span class="greeting">Hello, I'm</span>
+<h1 class="hero-title">Seif Elbastawisi</h1>
+<h2 class="hero-subtitle">Frontend Developer <br/><span aria-live="polite" class="typed-text" id="typed-text"></span><span aria-hidden="true" class="cursor-blink">|</span></h2>
+<p class="hero-intro">I build accessible, responsive web experiences with clean UI, thoughtful interactions, and modern frontend tools.</p>
+<div class="hero-cta">
+<a class="btn btn-primary" href="#projects">View Projects</a>
+<a class="btn btn-secondary" href="#contact">Contact Me</a>
+<a class="btn btn-secondary" href="cv.html?download=true">Download CV</a></div>
+</div>
+<div class="hero-visual reveal fade-right">
+<div class="blob-wrapper hero-3d-stage" aria-label="Animated 3D technology-inspired artwork" role="img">
+<canvas id="hero-three-canvas" class="hero-three-canvas" aria-hidden="true"></canvas>
+<!-- <div class="hero-orbit-label orbit-label-one" aria-hidden="true"><span></span> CREATIVE CODE</div> -->
+<!-- <div class="hero-orbit-label orbit-label-two" aria-hidden="true"><span></span> WEB EXPERIENCE</div> -->
+<i class="fa-brands fa-react tech-icon float-1" aria-hidden="true"></i>
+<i class="fa-brands fa-vuejs tech-icon float-2" aria-hidden="true"></i>
+<i class="fa-brands fa-js tech-icon float-3" aria-hidden="true"></i>
+<i class="fa-brands fa-html5 tech-icon float-4" aria-hidden="true"></i>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="about section bg-surface" id="about">
+<div class="container">
+<h2 class="section-title reveal">
+<span class="text-gradient">About Me</span>
+</h2>
+<div class="about-content">
+<div class="about-image-wrapper reveal fade-left">
+<div class="about-image-placeholder" style="padding: 0; background: none; overflow: hidden">
+<img alt="Seif Elbastawisi" src="img/profile.jpg" style="width: 100%; height: 100%; object-fit: cover"/>
+</div>
+<div class="experience-badge">
+<span class="years">Frontend</span>
+<span class="text">Developer</span>
+</div>
+</div>
+<div class="about-text reveal fade-right">
+<h3>Creating interactive, user-friendly applications</h3>
+<p>I’m a Frontend Developer and a graduate of the Faculty of Computers and Information at Mansoura University. I enjoy turning ideas and designs into clear, responsive interfaces that are easy to use.</p>
+<p>My experience includes working with a software team and building projects with HTML, CSS, JavaScript, TypeScript, React, Bootstrap, and Tailwind CSS. I focus on reusable components, maintainable code, responsive layouts, and thoughtful user experiences. I completed my military service on December 1, 2025.</p>
+<div class="certificates mt-2">
+<h4>Certificates &amp; Education</h4>
+<ul class="cert-list">
+<li>
+<i class="fa-solid fa-graduation-cap"></i>
+<span>Faculty of Computers and Information - Mansoura
+                      University</span>
+</li>
+<li>
+<i class="fa-solid fa-certificate"></i>
+<span>Full Stack Web Development with Laravel - Mansoura
+                      University</span>
+</li>
+<li>
+<i class="fa-solid fa-certificate"></i>
+<span>Web Development Certificate - Mahara-Tech</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="skills section" id="skills">
+<div class="container">
+<h2 class="section-title reveal">
+<span class="text-gradient">Technical Skills</span>
+</h2>
+<div class="skills-grid">
+<!-- Languages -->
+<div class="skill-category reveal card">
+<div class="category-icon"><i class="fa-solid fa-code"></i></div>
+<h3>Languages</h3>
+<ul class="skill-tags">
+<li>HTML5</li>
+<li>CSS3</li>
+<li>Sass</li>
+<li>JavaScript</li>
+<li>TypeScript</li>
+</ul>
+</div>
+<!-- React Ecosystem -->
+<div class="skill-category reveal card" style="transition-delay: 100ms">
+<div class="category-icon">
+<i class="fa-brands fa-react"></i>
+</div>
+<h3>React Ecosystem</h3>
+<ul class="skill-tags">
+<li>React.js</li>
+<li>Next.js</li>
+<li>Redux</li>
+</ul>
+</div>
+<!-- Vue Ecosystem -->
+<div class="skill-category reveal card" style="transition-delay: 150ms">
+<div class="category-icon">
+<i class="fa-brands fa-vuejs" style="color: #4ade80"></i>
+</div>
+<h3>Vue Ecosystem</h3>
+<ul class="skill-tags">
+<li>Vue.js</li>
+<li>Nuxt.js</li>
+<li>Pinia</li>
+</ul>
+</div>
+<!-- Styling & UI -->
+<div class="skill-category reveal card" style="transition-delay: 200ms">
+<div class="category-icon">
+<i class="fa-solid fa-palette"></i>
+</div>
+<h3>Styling &amp; UI</h3>
+<ul class="skill-tags">
+<li>Tailwind CSS</li>
+<li>Bootstrap</li>
+<li>Sass</li>
+</ul>
+</div>
+<!-- Tools -->
+<div class="skill-category reveal card" style="transition-delay: 200ms">
+<div class="category-icon">
+<i class="fa-solid fa-wrench"></i>
+</div>
+<h3>Tools &amp; Platforms</h3>
+<ul class="skill-tags">
+<li>Git</li>
+<li>GitHub</li>
+<li>VS Code</li>
+<li>NPM</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="projects section bg-surface" id="projects">
+<div class="container">
+<div class="projects-heading reveal">
+  <span class="projects-eyebrow"><span class="eyebrow-dot"></span> WHAT I’VE BUILT</span>
+  <h2 class="section-title"><span class="text-gradient">Featured Projects</span></h2>
+  <p class="projects-intro">A selection of projects where I turn ideas into responsive, user-friendly web experiences.</p>
+</div>
+<div class="project-toolbar">
+<label class="project-search-label" for="project-search"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Find a project</label>
+<input class="project-search" id="project-search" type="search" placeholder="Search by project, technology, or feature…" autocomplete="off" aria-describedby="filter-results"/>
+</div>
+<div class="project-filters" aria-label="Filter projects by framework">
+<button class="filter-btn active" data-filter="all" aria-pressed="true">All <span class="filter-count" aria-hidden="true">3</span></button>
+<button class="filter-btn" data-filter="native" aria-pressed="false">Native <span class="filter-count" aria-hidden="true">1</span></button>
+<button class="filter-btn" data-filter="react" aria-pressed="false">React <span class="filter-count" aria-hidden="true">2</span></button>
+<button class="filter-btn" data-filter="vue" aria-pressed="false">Vue <span class="filter-count" aria-hidden="true">0</span></button>
+</div>
+<div class="projects-grid" id="project-grid" aria-live="polite">
+<!-- Project 1 -->
+<div class="project-card reveal" data-category="react">
+<div class="project-img-placeholder preview-academy" aria-label="Smart Academy project preview">
+  <span class="preview-window-dots"><i></i><i></i><i></i></span>
+  <span class="preview-kicker">STUDENT PORTAL</span>
+  <span class="preview-main-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+  <span class="preview-lines"><i></i><i></i><i></i></span>
+  <span class="preview-chip">Learn · Test · Grow</span>
+</div>
+<div class="project-info">
+<span class="project-badge">Graduation Project</span>
+<h3>Smart Academy</h3>
+<p>A university platform designed to help students access course materials, take online exams, review results, share lecture feedback, and submit complaints.</p>
+<div class="project-tech">
+<span>React</span>
+<span>Tailwind</span>
+<span>JavaScript</span>
+</div>
+<div class="project-links">
+<a aria-label="Open live demo: Smart Academy" class="project-link" href="https://seif9474.github.io/student_version_3/" rel="noopener noreferrer" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      Live Demo</a>
+<span class="project-role"><i class="fa-solid fa-user-gear"></i> Frontend
+                      Developer</span>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="project-card reveal" data-category="react" style="transition-delay: 100ms">
+<div class="project-img-placeholder preview-restaurant" aria-label="Restaurant website project preview">
+  <span class="preview-window-dots"><i></i><i></i><i></i></span>
+  <span class="preview-kicker">FRESH · TASTY · LOCAL</span>
+  <span class="preview-main-icon"><i class="fa-solid fa-utensils" aria-hidden="true"></i></span>
+  <span class="preview-lines"><i></i><i></i><i></i></span>
+  <span class="preview-chip">Explore the menu</span>
+</div>
+<div class="project-info">
+<span class="project-badge">E-commerce</span>
+<h3>Restaurant website</h3>
+<p>A responsive restaurant website for exploring menu items and featured dishes, with an interactive browsing experience.</p>
+<div class="project-tech">
+<span>React</span>
+<span>CSS Modules</span>
+<span>Redux</span>
+</div>
+<div class="project-links">
+<a aria-label="Open live demo: Restaurant website" class="project-link" href="https://seif9474.github.io/Project-Num4-Feane.Resturent/" rel="noopener noreferrer" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      Live Demo</a>
+<span class="project-role"><i class="fa-solid fa-user-gear"></i> Frontend
+                      Developer</span>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="project-card reveal" data-category="native" style="transition-delay: 200ms">
+<!-- ( native , react , vue ليك ثلاث انواع وهم  data-caregory  انت بتكتب نوع المشروع في ال filter علشان تتحكم في ال  ) -->
+<div class="project-img-placeholder preview-icona" aria-label="Icona Store project preview">
+  <span class="preview-window-dots"><i></i><i></i><i></i></span>
+  <span class="preview-kicker">ICONA / COLLECTION</span>
+  <span class="preview-main-icon"><i class="fa-solid fa-shirt" aria-hidden="true"></i></span>
+  <span class="preview-lines"><i></i><i></i><i></i></span>
+  <span class="preview-chip">Discover your style</span>
+</div>
+<div class="project-info">
+<span class="project-badge">E-commerce</span>
+<h3>Icona Store</h3>
+<p>A fashion storefront with a responsive layout and product-focused browsing experience for clothing and accessories.</p>
+<div class="project-tech">
+<span>Native</span>
+<span>Bootstrap</span>
+<span>JavaScript</span>
+</div>
+<div class="project-links">
+<a aria-label="Open live demo: Icona Store" class="project-link" href="https://seif9474.github.io/Project-Num1-IconaStore/" rel="noopener noreferrer" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      Live Demo</a>
+<span class="project-role"><i class="fa-solid fa-user-gear"></i> Frontend
+                      Developer</span>
+</div>
+</div>
+</div>
+</div>
+<p class="filter-results" id="filter-results" role="status" aria-live="polite">Showing all 3 projects</p>
+<div class="filter-empty" id="filter-empty" hidden>
+  <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+  <h3>No projects in this category yet</h3>
+  <p>Try another filter to explore the current projects.</p>
+  <button class="btn btn-secondary" type="button" id="reset-project-filters">Show all projects</button>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="experience section" id="experience">
+<div class="container">
+<h2 class="section-title reveal">
+<span class="text-gradient">Experience</span>
+</h2>
+<div class="timeline">
+<!-- TechLab Company -->
+<div class="timeline-item reveal">
+<div class="timeline-dot"></div>
+<div class="timeline-content card">
+<div class="timeline-header">
+<h3>Frontend Developer | Vue.js</h3>
+<span class="timeline-date">Mar 2026 – Present</span>
+</div>
+<h4 class="timeline-company">
+<i class="fa-solid fa-building" style="color: var(--primary)"></i>
+                  TechLab Company
+                </h4>
+<ul class="timeline-list">
+<li>
+                    Developed responsive web interfaces using Vue.js, Nuxt.js,
+                    TypeScript, and Tailwind CSS.
+                  </li>
+<li>
+                    Implemented reusable components and modular frontend
+                    architecture.
+                  </li>
+<li>
+                    Integrated frontend applications with REST APIs and handled
+                    loading, error, and validation states.
+                  </li>
+<li>
+                    Used Pinia for centralized state management across
+                    application features.
+                  </li>
+<li>
+                    Collaborated with developers to implement real-world
+                    application requirements and maintainable frontend
+                    solutions.
+                  </li>
+</ul>
+</div>
+</div>
+<!-- Upwork -->
+<!-- <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content card">
+                <div class="timeline-header">
+                  <h3>Frontend Developer | React.js</h3>
+                  <span class="timeline-date">2024 – Present</span>
+                </div>
+                <h4 class="timeline-company">
+                  <i class="fa-brands fa-upwork" style="color: #14a800"></i>
+                  Upwork (Freelance)
+                </h4>
+                <ul class="timeline-list">
+                  <li>
+                    Building modern, scalable, and responsive web applications
+                    for various global clients.
+                  </li>
+                  <li>
+                    Leveraging React.js, JavaScript, Tailwind CSS, and Bootstrap
+                    to deliver high-quality UI/UX.
+                  </li>
+                  <li>
+                    Collaborating remotely to translate client requirements into
+                    interactive, performant frontend solutions.
+                  </li>
+                </ul>
+              </div>
+            </div> -->
+<!-- Item 2 -->
+<div class="timeline-item reveal">
+<div class="timeline-dot"></div>
+<div class="timeline-content card">
+<div class="timeline-header">
+<h3>Frontend Developer</h3>
+<span class="timeline-date">2023 - 2024</span>
+</div>
+<h4 class="timeline-company">
+<i class="fa-solid fa-building"></i> Quttel Company
+                </h4>
+<ul class="timeline-list">
+<li>
+                    Developed responsive, interactive web interfaces using HTML,
+                    CSS, JavaScript, and React.
+                  </li>
+<li>
+                    Collaborated with cross-functional team members using Git
+                    and GitHub for version control.
+                  </li>
+<li>
+                    Contributed to building clean, user-friendly applications
+                    tailored strictly to user requirements.
+                  </li>
+</ul>
+</div>
+</div>
+<!-- Item 2 -->
+<!-- <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content card">
+                <div class="timeline-header">
+                  <h3>Military Service</h3>
+                  <span class="timeline-date">2024 – 2025</span>
+                </div>
+                <h4 class="timeline-company">
+                  <i class="fa-solid fa-shield"></i> Egyptian Armed Forces
+                </h4>
+                <p>
+                  Completed Military service on December 1, 2025, gaining
+                  superior discipline, teamwork, adaptability under pressure,
+                  and advanced time management skills.
+                </p>
+              </div>
+            </div> -->
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="services section bg-surface" id="services">
+<div class="container">
+<h2 class="section-title reveal">Services</h2>
+<div class="services-grid">
+<div class="service-card reveal card">
+<i class="fa-solid fa-laptop-code service-icon"></i>
+<h3>Frontend Development</h3>
+<p>
+                Building high-performance, interactive, and scalable single-page
+                applications using React and modern web ecosystems.
+              </p>
+</div>
+<div class="service-card reveal card" style="transition-delay: 100ms">
+<i class="fa-solid fa-mobile-screen service-icon"></i>
+<h3>Responsive Web Design</h3>
+<p>
+                Crafting pixel-perfect layouts that adapt seamlessly to look
+                great on desktop tabs, mobile phones, and tablets.
+              </p>
+</div>
+<div class="service-card reveal card" style="transition-delay: 200ms">
+<i class="fa-solid fa-network-wired service-icon"></i>
+<h3>API Integration</h3>
+<p>
+                Connecting frontend interfaces with Backend RESTful APIs, and
+                managing dynamic data states efficiently.
+              </p>
+</div>
+<div class="service-card reveal card" style="transition-delay: 300ms">
+<i class="fa-solid fa-screwdriver-wrench service-icon"></i>
+<h3>Web App Maintenance</h3>
+<p>
+                Refactoring legacy codebases, fixing UI bugs, optimizing build
+                sizes, and integrating novel frontend features.
+              </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Career Objective Section -->
+
+<!-- Contact Section -->
+<section class="contact section" id="contact">
+<div class="container">
+<h2 class="section-title reveal">Get In Touch</h2>
+<div class="contact-grid">
+<div class="contact-info reveal fade-left">
+<h3>Have a role or project in mind?</h3>
+<p>I’m open to frontend opportunities and collaboration. Send me a message or connect with me through the links below.</p>
+<div class="contact-links">
+<a class="contact-method card" href="mailto:seifelbastawisi@gmail.com">
+<i class="fa-solid fa-envelope"></i>
+<div>
+<h4>Email Me</h4>
+<span>seifelbastawisi@gmail.com</span>
+</div>
+</a>
+<a class="contact-method card" href="https://www.linkedin.com/in/seif-elbastawisi-8953b13a4" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-linkedin"></i>
+<div>
+<h4>LinkedIn</h4>
+<span>Seif Elbastawisi</span>
+</div>
+</a>
+<a class="contact-method card" href="https://github.com/Eng-Seif-Elbastawisi" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-github"></i>
+<div>
+<h4>GitHub</h4>
+<span>SeifDev</span>
+</div>
+</a>
+</div>
+</div>
+<div class="contact-form-wrapper reveal fade-right card">
+<form class="contact-form" id="contactForm">
+<div class="form-group">
+<label for="name">Name</label>
+<input id="name" name="name" placeholder="John Doe" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">Email</label>
+<input id="email" name="email" placeholder="name@example.com" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="subject">Subject</label>
+<input id="subject" name="subject" placeholder="Project Inquiry" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="message">Message</label>
+<textarea id="message" name="message" placeholder="How can I help you?" required="" rows="5"></textarea>
+</div>
+<button class="btn btn-primary btn-block" type="submit">
+<span>Send Message</span>
+<i class="fa-solid fa-paper-plane"></i>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer-content">
+<div class="footer-brand">
+<a class="logo" href="#">Seif.<span>Elbastawisi</span></a>
+<p>
+              Frontend Developer specializing in React and modern web
+              ecosystems.
+            </p>
+</div>
+<div class="footer-bottom">
+<p>
+              © <span id="year"></span> Seif Elbastawisi. All rights
+              reserved.
+            </p>
+<a aria-label="Back to top" class="back-to-top" href="#hero">
+<i class="fa-solid fa-arrow-up"></i>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Chatbot Intercom -->
+<div class="chatbot-container">
+<button aria-controls="chatbot-window" aria-expanded="false" aria-label="Open Chat" class="chatbot-toggle" id="chatbot-toggle">
+<i class="fa-solid fa-message"></i>
+</button>
+<div aria-label="SeifBot virtual assistant" aria-modal="false" class="chatbot-window" id="chatbot-window" role="dialog">
+<div class="chatbot-header">
+<h3>SeifBot 🤖</h3>
+<button class="chatbot-close" id="chatbot-close">
+<i class="fa-solid fa-xmark"></i>
+</button>
+</div>
+<div class="chatbot-messages" id="chatbot-messages">
+<div class="chat-message bot">
+<div class="message-content">
+              Hello! I'm Seif's virtual assistant. Ask me about his skills,
+              projects, or how to contact him! (You can ask in Arabic too)
+            </div>
+</div>
+</div>
+<div class="chatbot-input">
+<input autocomplete="off" id="chatbot-input-field" placeholder="Type a message..." type="text"/>
+<button id="chatbot-send">
+<i class="fa-solid fa-paper-plane"></i>
+</button>
+</div>
+</div>
+</div>
+<script src="js/script.js"></script>
+<script type="module" src="js/hero-three.js"></script>
+</body>
+</html>
